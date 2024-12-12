@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ropa para Niños</title>
+    <link rel="stylesheet" href="../css/niños.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html"><img src="../imagenes/Logo.png" id="logo" align="left"></a>
+            <h1>Urban Unity store</h1>
+            <div class="search-bar-container">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i> <!-- Icono de lupa -->
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar marca o producto...">
+                <a href="../vistas/carrito.html" class="cart-icon-btn">
+                    <i class="bi bi-cart2"></i>
+                </a>
+            
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li>
+                    <a href="#">Categoría</a>
+                    <ul>
+                        <li><a href="mujer.html">Dama</a></li>
+                        <li><a href="hombre.html">Caballero</a></li>
+                        <li><a href="niños.html">Niños</a></li>
+                    </ul>
+                </li>
+                <li><a href="acerca.html">Acerca de</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>    
+    </header>
+    <div class="product-container">
+       
+        <div class="product" background-color:#f9f9f9>
+            <img src="../imagenes/Ropa niños/nino1.png" alt="Traje gris">
+            <div class="product-title">Traje gris</div>
+            <div class="product-price">Precio: <span>$180,000</span> $150,000</div>
+            <button onclick="addToCart('Producto 27',150000)">Comprar</button>
+        </div>
+
+        <div class="product">
+            <img src="../imagenes/Ropa niños/nino2.png" alt="Traje azul oscuro sin blazer">
+            <div class="product-title">Traje azul oscuro sin blazer</div>
+            <div class="product-price">Precio: <span>$150,000</span> $120,000</div>
+            <button onclick="addToCart('Producto 28',120000)">Comprar</button>
+        </div>
+
+        <div class="product">
+            <img src="../imagenes/Ropa niños/nino3.png" alt="Traje completo">
+            <div class="product-title">Traje completo</div>
+            <div class="product-price">Precio: $200,000</div>
+            <button onclick="addToCart('Producto 29',200000)">Comprar</button>
+        </div>
+
+        <div class="product">
+            <img src="../imagenes/Ropa niños/nino4.png" alt="Traje azul claro sin blazer">
+            <div class="product-title">Traje azul claro sin blazer</div>
+            <div class="product-price">Precio:  $140,000</div>
+            <button onclick="addToCart('Producto 30',140000)">Comprar</button>
+        </div>
+
+        <div class="product">
+            <img src="../imagenes/Ropa niños/nino5.png" alt="Traje gris sin blazer">
+            <div class="product-title">Traje gris sin blazer</div>
+            <div class="product-price">Precio: <span>$150,900</span> $115,000</div>
+            <button onclick="addToCart('Producto 31',115000)">Comprar</button>
+        </div>
+
+        <div class="product">
+            <img src="../imagenes/Ropa niños/nino6.png" alt="Traje azul cielo sin blazer">
+            <div class="product-title">Traje azul cielo sin blazer</div>
+            <div class="product-price">Precio:  $135,000</div>
+            <button onclick="addToCart('Producto 32',135000)">Comprar</button>
+        </div>
+
+        <div class="product">
+            <img src="../imagenes/Ropa niños/niñaves1.png" alt="Vestido con arandelas rojo">
+            <div class="product-title">Vestido con arandelas rojo</div>
+            <div class="product-price">Precio: <span>$120,000</span> $89,900</div>
+            <button onclick="addToCart('Producto 33',66000)">Comprar</button>
+        </div>
+
+        <div class="product">
+            <img src="../imagenes/Ropa niños/niñaves10.png" alt="Vestido manga larga">
+            <div class="product-title">Vestido manga larga</div>
+            <div class="product-price">Precio: $108,000</div>
+            <button onclick="addToCart('Producto 34',108000)">Comprar</button>
+        </div>
+
+        <div class="product">
+            <img src="../imagenes/Ropa niños/niñaves2.png" alt="Vestido verde">
+            <div class="product-title">Vestido verde</div>
+            <div class="product-price">Precio: <span>$85,000</span> $52,000</div>
+            <button onclick="addToCart('Producto 35',52000)">Comprar</button>
+        </div>
+        <div class="product">
+            <img src="../imagenes/Ropa niños/niñaves4.png" alt="Vestido con arandelas rojo">
+            <div class="product-title">Vestido con diadema</div>
+            <div class="product-price">Precio:  $135,000</div>
+            <button onclick="addToCart('Producto 36',135000)">Comprar</button>
+        </div>
+        <div class="product">
+            <img src="../imagenes/Ropa niños/niñaves7.png" alt="Vestido palo de rosa">
+            <div class="product-title">Vestido palo de rosa</div>
+            <div class="product-price">Precio: <span>$169,000</span> $110,000</div>
+            <button onclick="addToCart('Producto 37',110000)">Comprar</button>
+        </div>
+        <div class="product">
+            <img src="../imagenes/Ropa niños/niñaves8.png" alt="Vestido con puntos">
+            <div class="product-title">Vestido con puntos</div>
+            <div class="product-price">Precio: <span>$135,000</span> $90,000</div>
+            <button onclick="addToCart('Producto 38',90000)">Comprar</button>
+        </div>
+        <div class="product">
+            <img src="../imagenes/Ropa niños/niñaves9.png" alt="Vestido con bolso">
+            <div class="product-title">Vestido con bolso</div>
+            <div class="product-price">Precio: $128,000</div>
+            <button onclick="addToCart('Producto 39',128000)">Comprar</button>
+        </div>
+    </div>
+    <footer>
+        <a href="https://es-la.facebook.com/"><img src="../icon/facebook.svg" id="iconfooter"></a>
+        <a href="https://www.instagram.com/"><img src="../icon/instagram.svg" id="iconfooter"></a>
+        <a href="https://co.pinterest.com/"><img src="../icon/pinterest.svg" id="iconfooter"></a>
+        
+        <br>
+        &copy; <a href="terminos.html" id="terminos">Términos y condiciones </a>
+    </footer>
+    <script src="../js/script.js"></script>
+    <script src="https://kit.fontawesome.com/03cf43c08a.js" crossorigin="anonymous"></script>
+</body>
+</html>

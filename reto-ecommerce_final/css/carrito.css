@@ -1,0 +1,264 @@
+/* Estilo General */
+body {
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #060606;
+}
+
+header {
+    background-color: #ebebeb;
+    color: #000000;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/*h1 {
+    font-weight: bold;
+    font-family: serif;
+}*/
+h1 {
+    font-size: 50px;
+    text-align: center;
+    color: #4f4f4f;
+}
+
+footer {
+    color: #000000;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ebebeb;
+   
+}
+
+
+
+main {
+    margin: 20px;
+}
+
+/*Menú de navegación*/
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-around;
+}
+nav ul li{
+    display: inline;
+    margin-right: 20px;
+}
+nav ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+}
+nav ul li a:hover{
+    background-color: #eaeaea;
+}
+
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li ul {
+    display: none; 
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px #0000001a;
+    padding: 10px 0;
+    z-index: 1000; 
+    min-width: 150px;
+}
+
+nav ul li ul li {
+    text-align: left; 
+    padding: 5px 15px;
+}
+
+nav ul li ul li a {
+    color: #060606; 
+    font-size: 0.9em;
+    text-decoration: none;
+}
+
+nav ul li ul li a:hover {
+    background-color: #f9f9f9; 
+    color: #6e6e6e;
+}
+
+nav ul li:hover ul {
+    display: block; 
+}
+
+.search-bar-container {
+    display: flex;
+    /*align-items: center;*/
+    justify-content: space-between;
+    padding: 10px 80px;
+    background-color: #ebebeb; 
+}
+
+
+.search-icon, i{
+    font-size: 24px;
+    color: rgb(0, 0, 0); 
+    cursor: pointer;
+}
+
+
+
+/* Barra de búsqueda */
+.search-bar {
+    flex-grow: 1;
+    margin: 0px; 
+    position: relative;
+}
+
+.search-bar input {
+    width: 80%;
+    padding: 10px 20px;
+    border-radius: 20px;
+    outline: none;
+}
+
+.search-bar input::placeholder {
+    color: #aaa; 
+}
+
+
+.cart-icon-btn {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#cart {
+    margin-bottom: 20px;
+}
+
+#cart div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+#cart div p {
+    margin: 0;
+    font-size: 16px;
+}
+
+#cart div button {
+    font-family: monospace;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#cart div button:hover {
+    background-color: #e60000;
+}
+
+h2 {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+#clear-cart {
+    font-family: monospace;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#clear-cart:hover {
+    background-color: #e60000;
+}
+#pay-button{
+    font-family: monospace;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#pay-button:hover{
+    background-color: #e60000;
+}
+
+footer {
+    color: #000000;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ebebeb;
+   
+}
+
+#iconfooter {
+    width: 2%;
+    margin: 10px;
+}
+
+
+#terminos {
+    text-decoration: none;
+    color: #000000;
+}
+
+#terminos:hover{
+    color: #aaa;
+}
+
+
+@media (min-width:600px){
+    nav ul{
+        flex-direction: row;
+    }
+    nav ul li{
+        margin-bottom: 0;
+    }
+}

@@ -1,0 +1,190 @@
+body {
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #fdf2db;
+    color: #060606;
+}
+
+header {
+    background-color: #ebebeb;
+    color: #000000;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/*Se agregó el Logo*/
+#logo {
+    max-width: 8%;
+    padding-left: 40px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    color: #4f4f4f;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-around;
+}
+nav ul li{
+    display: inline;
+    margin-right: 20px;
+}
+nav ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+}
+nav ul li a:hover{
+    background-color: #eaeaea;
+}
+
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li ul {
+    display: none; 
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px #0000001a;
+    padding: 10px 0;
+    z-index: 1000; 
+    min-width: 150px;
+}
+
+nav ul li ul li {
+    text-align: left; 
+    padding: 5px 15px;
+}
+
+nav ul li ul li a {
+    color: #060606; 
+    font-size: 0.9em;
+    text-decoration: none;
+}
+
+nav ul li ul li a:hover {
+    background-color: #f9f9f9; 
+    color: #11b251;
+}
+
+nav ul li:hover ul {
+    display: block; 
+}
+
+
+.search-bar-container {
+    display: flex;
+    /*align-items: center;*/
+    justify-content: space-between;
+    padding: 10px 80px;
+    background-color: #ebebeb;  
+}
+
+
+.search-icon, i{
+    font-size: 24px;
+    color: #000000; 
+    cursor: pointer;
+}
+
+/* Barra de búsqueda */
+.search-bar {
+    flex-grow: 1;
+    margin: 0px; 
+    position: relative;
+}
+
+.search-bar input {
+    width: 80%;
+    padding: 10px 20px;
+    border-radius: 20px;
+    /*border: none0;*/
+    outline: none;
+    
+}
+
+.search-bar input::placeholder {
+    color: #aaa; 
+}
+
+.container{
+    max-width: 600px; 
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 9px #000000;
+}
+h1 {
+    font-size: 30px;
+    text-align: center;
+    color: #4f4f4f;
+}
+label{
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+input, textarea, select{
+    width: 97%;
+    padding: 10px ;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+input[type="submit"]{
+    background-color: #9f9f9f;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    background-color:#d6d6d6 ;
+}
+footer {
+    color: #000000;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #dfcba2;
+   
+}
+#terminos {
+    text-decoration: none;
+    color: #000000;
+}
+#iconfooter {
+    width: 2%;
+    margin: 10px;
+    color: #fff;
+}
+
+@media (min-width:600px){
+    nav ul{
+        flex-direction: row;
+    }
+    nav ul li{
+        margin-bottom: 0;
+    }
+}

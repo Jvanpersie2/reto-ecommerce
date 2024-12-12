@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contacto</title>
+    <link rel="stylesheet" href="../css/contac.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html"><img src="../imagenes/Logo.png" id="logo" align="left"></a>
+            <h1>Urban Unity Store</h1>
+            <div class="search-bar-container">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i> <!-- Icono de lupa -->
+                <div class="search-bar">
+                    <input type="text" placeholder="Buscar marca o producto...">
+                    <a href="carrito.html" class="cart-icon-btn">
+                        <i class="bi bi-cart2"></i>
+                    </a>
+            
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li>
+                    <a href="#">Categoría</a>
+                    <ul>
+                        <li><a href="mujer.html">Dama</a></li>
+                        <li><a href="hombre.html">Caballero</a></li>
+                        <li><a href="niños.html">Niños</a></li>
+                    </ul>
+                </li>
+                <li><a href="acerca.html">Acerca de</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        </header>
+    <div class="container">
+        <form>
+            <h1>Formulario de contacto</h1>
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre"
+                placeholder="Ingrese su nombre" required>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email"
+                placeholder="Ingrese su Correo" required>
+            </fieldset>
+            <label for="telefono">Telefono:</label>
+            <input type="tel" name="telefono" id="telefono" minlength="10">
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea name="mensaje" id="mensaje" rows="5"
+                required></textarea>
+
+            <label for="pais">País:</label>
+            <select name="pais" id="pais">
+                <option value="" disabled selected>Selecciona tu país</option>
+                <option value="es">España</option>
+                <option value="mx">México</option>
+                <option value="co">Colombia</option>
+                <option value="ar">Argentina</option>
+            </select>
+           <input type="submit" value="Enviar">  
+
+           <!--<button onclick="alert('Enviaste los datos')">Enviar</button>-->
+        </form>
+    </div>
+    <footer>
+        <a href="https://es-la.facebook.com/"><img src="../icon/facebook.svg" id="iconfooter"></a>
+        <a href="https://www.instagram.com/"><img src="../icon/instagram.svg" id="iconfooter"></a>
+        <a href="https://co.pinterest.com/"><img src="../icon/pinterest.svg" id="iconfooter"></a>
+        
+        <br>
+        &copy; <a href="terminos.html" id="terminos">Términos y condiciones </a>
+    </footer>
+    <script src="https://kit.fontawesome.com/03cf43c08a.js" crossorigin="anonymous"></script>
+</body>
+</html>

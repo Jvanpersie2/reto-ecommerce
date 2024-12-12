@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Unity Store</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div>
+    <header>
+        <nav>
+            <a href="index.html"><img src="imagenes/Logo.png" id="logo" align="left"></a>
+            <h1>Urban Unity Store</h1>
+            <div class="search-bar-container">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i> <!-- Icono de lupa -->
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar marca o producto...">
+                <a href="vistas/carrito.html" class="cart-icon-btn">
+                    <i class="bi bi-cart2"></i>
+                </a>
+            
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li>
+                    <a href="#">Categoría</a>
+                    <ul>
+                        <li><a href="vistas/mujer.html">Dama</a></li>
+                        <li><a href="vistas/hombre.html">Caballero</a></li>
+                        <li><a href="vistas/niños.html">Niños</a></li>
+                    </ul>
+                </li>
+                <li><a href="vistas/acerca.html">Acerca de</a></li>
+                <li><a href="vistas/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>    
+    </header>
+</div>
+    <main>
+        
+        <!--Este es el CAROUSEL-->
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="imagenes/Carousel/portadaventanav.png" alt="Imagen 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagenes/Carousel/portadarosablanco.png" alt="Imagen 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagenes/Carousel/portadaniñ.png" alt="Imagen 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagenes/Carousel/portadahombres .png" alt="Imagen 4">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagenes/Carousel/portadamujer.png" alt="Imagen 5">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagenes/Carousel/portpromo.png" alt="Imagen 6">
+                </div>
+            </div>
+            <a class="carousel-control prev" onclick="prevSlide()">&#10094;</a>
+            <a class="carousel-control next" onclick="nextSlide()">&#10095;</a>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="products">
+            <div class="product" background-color:#f9f9f9>
+                <img src="imagenes/Ropa mujer/conjunto1.png" alt="Producto 1">
+                <h2>Enterizo casual dama</h2>
+                <p>Precio: $80.000</p>
+                <button onclick="addToCart('Producto 1',80000)">Comprar</button>
+            </div>
+            <div class="product">
+                <img src="imagenes/Ropa hombre/conjuntobeige.png" alt="Producto 2">
+                <h2>Conjunto deportivo Hombre</h2>
+                <p>Precio: $125.000</p>
+                <button onclick="addToCart('Producto 2',125000)">Comprar</button>
+            </div>
+            <div class="product">
+                <img src="imagenes/Ropa niños/niñaves9.png" alt="Producto 3">
+                <h2>Vestido niña inglesa</h2>
+                <p>Precio: $90.000</p>
+                <button onclick="addToCart('Producto 3',90000)">Comprar</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <a href="https://es-la.facebook.com/"><img src="icon/facebook.svg" id="iconfooter"></a>
+        <a href="https://www.instagram.com/"><img src="icon/instagram.svg" id="iconfooter"></a>
+        <a href="https://co.pinterest.com/"><img src="icon/pinterest.svg" id="iconfooter"></a>
+        
+        <br>
+        &copy; <a href="vistas/terminos.html" id="terminos">Términos y condiciones </a>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/03cf43c08a.js" crossorigin="anonymous"></script>
+</body>
+</html>
